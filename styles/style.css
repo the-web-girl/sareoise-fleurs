@@ -1179,7 +1179,7 @@ main {
 
 .form-container {
     background: var(--gradient-card);
-    padding: var(--spacing-xl);
+    /* padding: var(--spacing-xl); */
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-soft);
 }
