@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sareoise Fleurs | Demande de devis et informations</title>
+    <meta name="description" content="Contactez Sareoise Fleurs pour vos projets floraux. Formulaire de contact, devis personnalisé, horaires et informations pratiques.">
+    <link rel="canonical" href="https://sareoise-fleurs.fr/contact.html">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Accueil Sareoise Fleurs">
+                <span>🌸</span> Sareoise Fleurs
+            </a>
+            
+            <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="evenements.html" class="nav-link">Événements</a></li>
+                <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-container">
+            <!-- En-tête -->
+            <section class="page-header" aria-label="Contact">
+                <div class="container">
+                    <h1>Contactez <span class="text-gradient">Sareoise Fleurs</span></h1>
+                    <p class="page-description">
+                        Nous sommes là pour concrétiser vos projets floraux. N'hésitez pas à nous contacter 
+                        pour toute demande de devis ou information.
+                    </p>
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Formulaire de contact -->
+                    <section class="contact-form-section" aria-label="Formulaire de contact">
+                        <div class="form-container">
+                            <h2>Envoyez-nous un message</h2>
+                            <p class="form-description">
+                                Décrivez-nous votre projet et nous vous répondrons dans les plus brefs délais.
+                            </p>
+                            
+                            <form action="https://formsubmit.co/contact@sareoise-fleurs.fr" method="POST" class="contact-form" novalidate>
+                                <!-- Champs cachés pour FormSubmit -->
+                                <input type="hidden" name="_next" value="https://sareoise-fleurs.fr/merci.html">
+                                <input type="hidden" name="_subject" value="Nouvelle demande - Sareoise Fleurs">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="nom" class="form-label">
+                                            Nom *
+                                        </label>
+                                        <input type="text" id="nom" name="nom" class="form-input" required aria-describedby="nom-error">
+                                        <div id="nom-error" class="error-message" role="alert"></div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="prenom" class="form-label">
+                                            Prénom *
+                                        </label>
+                                        <input type="text" id="prenom" name="prenom" class="form-input" required aria-describedby="prenom-error">
+                                        <div id="prenom-error" class="error-message" role="alert"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">
+                                            Email *
+                                        </label>
+                                        <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error">
+                                        <div id="email-error" class="error-message" role="alert"></div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="telephone" class="form-label">
+                                            Téléphone
+                                        </label>
+                                        <input type="tel" id="telephone" name="telephone" class="form-input" aria-describedby="telephone-error">
+                                        <div id="telephone-error" class="error-message" role="alert"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="evenement" class="form-label">
+                                        Type d'événement
+                                    </label>
+                                    <select id="evenement" name="evenement" class="form-select">
+                                        <option value="">Sélectionnez un type d'événement</option>
+                                        <option value="mariage">Mariage</option>
+                                        <option value="fiancailles">Fiançailles</option>
+                                        <option value="anniversaire">Anniversaire</option>
+                                        <option value="naissance">Naissance</option>
+                                        <option value="diplome">Remise de diplôme</option>
+                                        <option value="bouquet">Bouquet personnalisé</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="date-evenement" class="form-label">
+                                            Date souhaitée
+                                        </label>
+                                        <input type="date" id="date-evenement" name="date-evenement" class="form-input">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="budget" class="form-label">
+                                            Budget approximatif
+                                        </label>
+                                        <select id="budget" name="budget" class="form-select">
+                                            <option value="">Sélectionnez votre budget</option>
+                                            <option value="0-100">Moins de 100€</option>
+                                            <option value="100-300">100€ - 300€</option>
+                                            <option value="300-500">300€ - 500€</option>
+                                            <option value="500-1000">500€ - 1000€</option>
+                                            <option value="1000+">Plus de 1000€</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">
+                                        Message *
+                                    </label>
+                                    <textarea id="message" name="message" rows="6" class="form-textarea" 
+                                             placeholder="Décrivez votre projet, vos préférences de fleurs, couleurs, style..." 
+                                             required aria-describedby="message-error"></textarea>
+                                    <div id="message-error" class="error-message" role="alert"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                                        <span class="checkbox-custom"></span>
+                                        J'accepte que mes données soient utilisées pour traiter ma demande *
+                                    </label>
+                                    <div id="confidentialite-error" class="error-message" role="alert"></div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-lg btn-full">
+                                    <span class="btn-icon">📨</span>
+                                    Envoyer ma demande
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+
+                    <!-- Informations de contact -->
+                    <aside class="contact-info-section" aria-label="Informations de contact">
+                        <div class="contact-info">
+                            <h2>Informations pratiques</h2>
+                            
+                            <div class="info-card">
+                                <h3>
+                                    <span class="info-icon">📍</span>
+                                    Adresse
+                                </h3>
+                                <p>
+                                    15 Rue des Fleurs<br>
+                                    62860 Sareoise<br>
+                                    Pas-de-Calais, France
+                                </p>
+                            </div>
+                            
+                            <div class="info-card">
+                                <h3>
+                                    <span class="info-icon">📞</span>
+                                    Téléphone
+                                </h3>
+                                <p>
+                                    <a href="tel:+33123456789" class="contact-link">
+                                        01 23 45 67 89
+                                    </a>
+                                </p>
+                            </div>
+                            
+                            <div class="info-card">
+                                <h3>
+                                    <span class="info-icon">📧</span>
+                                    Email
+                                </h3>
+                                <p>
+                                    <a href="mailto:contact@sareoise-fleurs.fr" class="contact-link">
+                                        contact@sareoise-fleurs.fr
+                                    </a>
+                                </p>
+                            </div>
+                            
+                            <div class="info-card">
+                                <h3>
+                                    <span class="info-icon">⏰</span>
+                                    Horaires d'ouverture
+                                </h3>
+                                <div class="horaires">
+                                    <div class="horaire-ligne">
+                                        <span>Lundi - Samedi</span>
+                                        <span>9h00 - 18h00</span>
+                                    </div>
+                                    <div class="horaire-ligne">
+                                        <span>Dimanche</span>
+                                        <span>Sur rendez-vous</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-card">
+                                <h3>
+                                    <span class="info-icon">🚚</span>
+                                    Livraison
+                                </h3>
+                                <p>
+                                    Livraison gratuite dans un rayon de 10km autour de Sareoise.
+                                    Autres zones : nous consulter.
+                                </p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sareoise Fleurs</h4>
+                    <p>Votre fleuriste artisan à Sareoise</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 contact@sareoise-fleurs.fr</p>
+                    <p>📞 01 23 45 67 89</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <p>Lun-Sam : 9h-18h</p>
+                    <p>Dimanche : Sur rendez-vous</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sareoise Fleurs. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

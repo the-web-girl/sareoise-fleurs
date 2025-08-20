@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Sareoise Fleurs | Nos créations florales</title>
+    <meta name="description" content="Découvrez notre galerie de compositions florales : bouquets, centres de table, arrangements saisonniers. Créations sur mesure avec fleurs fraîches.">
+    <link rel="canonical" href="https://sareoise-fleurs.fr/galerie.html">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Accueil Sareoise Fleurs">
+                <span>🌸</span> Sareoise Fleurs
+            </a>
+            
+            <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+                <li><a href="galerie.html" class="nav-link active" aria-current="page">Galerie</a></li>
+                <li><a href="evenements.html" class="nav-link">Événements</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-container">
+            <!-- En-tête -->
+            <section class="page-header" aria-label="Galerie florale">
+                <div class="container">
+                    <h1>Galerie <span class="text-gradient">Florale</span></h1>
+                    <p class="page-description">
+                        Découvrez nos créations florales uniques, chacune conçue avec passion 
+                        pour sublimer vos moments les plus précieux.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Filtres -->
+            <section class="filters-section" aria-label="Filtres de catégories">
+                <div class="container">
+                    <div class="filters">
+                        <button class="filter-btn active" data-filter="tous" aria-pressed="true">Tous</button>
+                        <button class="filter-btn" data-filter="bouquets" aria-pressed="false">Bouquets</button>
+                        <button class="filter-btn" data-filter="mariage" aria-pressed="false">Mariage</button>
+                        <button class="filter-btn" data-filter="saison" aria-pressed="false">Saison</button>
+                        <button class="filter-btn" data-filter="evenements" aria-pressed="false">Événements</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Galerie -->
+            <section class="gallery-section" aria-label="Compositions florales">
+                <div class="container">
+                    <div class="gallery-grid" id="gallery-grid">
+                        <!-- Bouquet Romance -->
+                        <article class="gallery-item" data-category="bouquets" data-id="1">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=400&h=300&fit=crop&crop=center" 
+                                         alt="Bouquet Romance - Élégante composition de roses et pivoines dans des tons pastel">
+                                    <div class="gallery-overlay">
+                                        <button class="gallery-btn" aria-label="Voir les détails du Bouquet Romance">
+                                            Voir les détails
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-content">
+                                    <h3>Bouquet Romance</h3>
+                                    <p>Élégante composition de roses et pivoines dans des tons pastel</p>
+                                    <div class="gallery-price">45€</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Centre de Table Mariage -->
+                        <article class="gallery-item" data-category="mariage" data-id="2">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1606218057992-b00d2e8b9def?w=400&h=300&fit=crop&crop=center" 
+                                         alt="Centre de Table Mariage - Composition sophistiquée pour tables de réception">
+                                    <div class="gallery-overlay">
+                                        <button class="gallery-btn" aria-label="Voir les détails du Centre de Table Mariage">
+                                            Voir les détails
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-content">
+                                    <h3>Centre de Table Mariage</h3>
+                                    <p>Composition sophistiquée pour tables de réception</p>
+                                    <div class="gallery-price">75€</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Arrangement Saisonnier -->
+                        <article class="gallery-item" data-category="saison" data-id="3">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&crop=center" 
+                                         alt="Arrangement Saisonnier - Création évolutive selon les fleurs de saison">
+                                    <div class="gallery-overlay">
+                                        <button class="gallery-btn" aria-label="Voir les détails de l'Arrangement Saisonnier">
+                                            Voir les détails
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-content">
+                                    <h3>Arrangement Saisonnier</h3>
+                                    <p>Création évolutive selon les fleurs de saison</p>
+                                    <div class="gallery-price">35€</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Bouquet Champêtre -->
+                        <article class="gallery-item" data-category="bouquets" data-id="4">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1566057634493-5b1c1db3e6bb?w=400&h=300&fit=crop&crop=center" 
+                                         alt="Bouquet Champêtre - Composition rustique avec fleurs des champs">
+                                    <div class="gallery-overlay">
+                                        <button class="gallery-btn" aria-label="Voir les détails du Bouquet Champêtre">
+                                            Voir les détails
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-content">
+                                    <h3>Bouquet Champêtre</h3>
+                                    <p>Composition rustique avec fleurs des champs</p>
+                                    <div class="gallery-price">40€</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Arche Florale -->
+                        <article class="gallery-item" data-category="evenements" data-id="5">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&h=300&fit=crop&crop=center" 
+                                         alt="Arche Florale - Décoration majestueuse pour cérémonie">
+                                    <div class="gallery-overlay">
+                                        <button class="gallery-btn" aria-label="Voir les détails de l'Arche Florale">
+                                            Voir les détails
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-content">
+                                    <h3>Arche Florale</h3>
+                                    <p>Décoration majestueuse pour cérémonie</p>
+                                    <div class="gallery-price">250€</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Couronne Moderne -->
+                        <article class="gallery-item" data-category="saison" data-id="6">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1512838243191-db33068c2b34?w=400&h=300&fit=crop&crop=center" 
+                                         alt="Couronne Moderne - Décoration contemporaine pour intérieur">
+                                    <div class="gallery-overlay">
+                                        <button class="gallery-btn" aria-label="Voir les détails de la Couronne Moderne">
+                                            Voir les détails
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gallery-content">
+                                    <h3>Couronne Moderne</h3>
+                                    <p>Décoration contemporaine pour intérieur</p>
+                                    <div class="gallery-price">55€</div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="cta-section" aria-label="Demande de devis personnalisé">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>Une création sur mesure ?</h2>
+                        <p>
+                            Nos compositions peuvent être personnalisées selon vos goûts, 
+                            votre budget et l'occasion spéciale que vous célébrez.
+                        </p>
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <span class="btn-icon">🌸</span>
+                            Demander un devis personnalisé
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="composition-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-overlay" aria-hidden="true"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <button class="modal-close" aria-label="Fermer la fenêtre" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-grid">
+                    <div class="modal-image">
+                        <img id="modal-img" src="" alt="" />
+                    </div>
+                    <div class="modal-info">
+                        <p id="modal-description" class="modal-description"></p>
+                        
+                        <div class="modal-section">
+                            <h4><span class="section-icon">🌸</span> Fleurs utilisées</h4>
+                            <div id="modal-flowers" class="flowers-list"></div>
+                        </div>
+                        
+                        <div class="modal-details">
+                            <div class="modal-detail">
+                                <span class="detail-icon">⏱️</span>
+                                <span id="modal-delivery">Délai : </span>
+                            </div>
+                            <div class="modal-price">
+                                <span class="price-icon">💰</span>
+                                <span id="modal-price-value"></span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn btn-primary btn-full">
+                            Commander cette composition
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sareoise Fleurs</h4>
+                    <p>Votre fleuriste artisan à Sareoise</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 contact@sareoise-fleurs.fr</p>
+                    <p>📞 01 23 45 67 89</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <p>Lun-Sam : 9h-18h</p>
+                    <p>Dimanche : Sur rendez-vous</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sareoise Fleurs. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

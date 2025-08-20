@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci - Sareoise Fleurs | Message reçu</title>
+    <meta name="description" content="Merci pour votre message ! L'équipe de Sareoise Fleurs vous répondra dans les plus brefs délais.">
+    <link rel="canonical" href="https://sareoise-fleurs.fr/merci.html">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Accueil Sareoise Fleurs">
+                <span>🌸</span> Sareoise Fleurs
+            </a>
+            
+            <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="evenements.html" class="nav-link">Événements</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-container">
+            <section class="thank-you-section" aria-label="Message de remerciement">
+                <div class="container">
+                    <div class="thank-you-content">
+                        <div class="thank-you-icon">🌸</div>
+                        <h1>Merci pour votre message !</h1>
+                        <p class="thank-you-message">
+                            Votre demande a bien été reçue. Notre équipe vous répondra dans les plus brefs délais, 
+                            généralement sous 24 heures.
+                        </p>
+                        
+                        <div class="next-steps">
+                            <h2>Prochaines étapes</h2>
+                            <ul>
+                                <li>📧 Vous recevrez un email de confirmation</li>
+                                <li>📞 Nous vous contacterons pour discuter de votre projet</li>
+                                <li>💐 Nous préparerons un devis personnalisé</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="thank-you-actions">
+                            <a href="index.html" class="btn btn-primary">
+                                Retour à l'accueil
+                            </a>
+                            <a href="galerie.html" class="btn btn-outline">
+                                Voir nos créations
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sareoise Fleurs</h4>
+                    <p>Votre fleuriste artisan à Sareoise</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 contact@sareoise-fleurs.fr</p>
+                    <p>📞 01 23 45 67 89</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <p>Lun-Sam : 9h-18h</p>
+                    <p>Dimanche : Sur rendez-vous</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sareoise Fleurs. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+    
+    <style>
+        .thank-you-section {
+            padding: var(--spacing-2xl) 0;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .thank-you-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .thank-you-icon {
+            font-size: 5rem;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .thank-you-content h1 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .thank-you-message {
+            font-size: 1.125rem;
+            color: var(--color-muted-foreground);
+            line-height: 1.7;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .next-steps {
+            background: var(--gradient-hero);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--spacing-xl);
+            text-align: left;
+        }
+        
+        .next-steps h2 {
+            text-align: center;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-foreground);
+        }
+        
+        .next-steps ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .next-steps li {
+            padding: var(--spacing-sm) 0;
+            color: var(--color-muted-foreground);
+        }
+        
+        .thank-you-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            align-items: center;
+        }
+        
+        @media (min-width: 640px) {
+            .thank-you-actions {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+</html>
